@@ -54,7 +54,7 @@ public class HUSLColorConverter {
     }
 
     private static double distanceFromPole(double[] point) {
-        return Math.sqrt(Math.pow(point[0], 2) + Math.pow(point[1], 2));
+        return Math.hypot(point[0],point[1]);
     }
 
     private static Length lengthOfRayUntilIntersect(double theta, double[] line) {
